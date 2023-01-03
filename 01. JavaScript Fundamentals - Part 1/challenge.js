@@ -15,10 +15,26 @@ Test data:
 Data 1: Mark weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
 Data 2: Mark weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall. */
 
-let massMark = 78;
-let heightMark = 1.69;
-let massJohn = 92;
-let heightJohn = 1.95;
-let bmiMark = massMark / heightMark ** 2;
-let bmiJohn = massJohn / heightJohn ** 2;
-console.log(bmiMark, bmiJohn);
+const massMark1 = 78;
+const heightMark1 = 1.69;
+const massJohn1 = 92;
+const heightJohn1 = 1.95;
+
+const bmiMark1 = massMark1 / heightMark1 ** 2;
+const bmiJohn1 = massJohn1 / (heightJohn1 * heightJohn1);
+console.log(bmiMark1, bmiJohn1);
+
+const markHigherBMI1 = bmiMark1 > bmiJohn1;
+console.log(markHigherBMI1);
+
+const massMark2 = 95;
+const heightMark2 = 1.88;
+const massJohn2 = 85;
+const heightJohn2 = 1.76;
+
+const bmiMark2 = massMark2 / heightMark2 ** 2;
+const bmiJohn2 = massJohn2 / (heightJohn2 * heightJohn2);
+console.log(bmiMark2, bmiJohn2);
+
+const markHigherBMI2 = bmiMark2 > bmiJohn2;
+console.log(markHigherBMI2);
