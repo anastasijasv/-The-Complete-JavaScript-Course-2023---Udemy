@@ -40,8 +40,8 @@ console.log(typeof null);
 
 // let, const and var
 
-let age = 30;
-age = 31;
+let myAge = 30;
+myAge = 31;
 
 const birthYear = 1991;
 
@@ -84,6 +84,35 @@ console.log(a, b);
 
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
+
+
+// Strings and Template Literals
+
+const myName = "Jonas";
+const profession = "teacher";
+const birth = 1991;
+const current = 2027;
+
+const jonas = "I'm " + myName + ", a " + (current - birth) + " year old " + profession + "!";
+console.log(jonas);
+
+const jonasNew = `I'm ${myName}, a ${current - birth} year old ${profession}!`;
+console.log(jonasNew);
+
+console.log("String with \n\
+multiple \n\
+lines");
+
+console.log(`String with
+multiple
+lines`);
+
+
+// Taking Decisions: if / else Statements
+
+
+
+
 
 
 
