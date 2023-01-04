@@ -14,7 +14,6 @@ let myCurrentJob = "Teacher";
 
 console.log(myFirstJob);
 
-
 // Data Types
 
 let javascriptIsFun = true;
@@ -37,7 +36,6 @@ console.log(typeof year);
 
 console.log(typeof null);
 
-
 // let, const and var
 
 let myAge = 30;
@@ -47,7 +45,6 @@ const birthYear = 1991;
 
 var job = "programmer";
 job = "teacher";
-
 
 // Basic Operators
 
@@ -75,7 +72,6 @@ console.log(ageSarah >= 18);
 const isFullAge = ageSarah >= 18;
 console.log(now - 1991 > now - 2018);
 
-
 // Operator Precedence
 
 let a, b;
@@ -85,7 +81,6 @@ console.log(a, b);
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 
-
 // Strings and Template Literals
 
 const myName = "Jonas";
@@ -93,20 +88,28 @@ const profession = "teacher";
 const birth = 1991;
 const current = 2027;
 
-const jonas = "I'm " + myName + ", a " + (current - birth) + " year old " + profession + "!";
+const jonas =
+  "I'm " +
+  myName +
+  ", a " +
+  (current - birth) +
+  " year old " +
+  profession +
+  "!";
 console.log(jonas);
 
 const jonasNew = `I'm ${myName}, a ${current - birth} year old ${profession}!`;
 console.log(jonasNew);
 
-console.log("String with \n\
+console.log(
+  "String with \n\
 multiple \n\
-lines");
+lines"
+);
 
 console.log(`String with
 multiple
 lines`);
-
 
 // Taking Decisions: if / else Statements
 
@@ -133,8 +136,22 @@ if (myBirth <= 2000) {
 }
 console.log(century);
 
+// Type Conversion and Coercion
 
+const inputYear = "1991";
+console.log(inputYear, Number(inputYear));
+console.log(inputYear + 18);
+console.log(Number(inputYear) + 18);
 
+console.log(Number("Jonas"));
+console.log(typeof Nan);
 
+console.log(String(23), 23);
 
+console.log("I am " + 23 + " years old");
+console.log("23" - "10" - 3); // 10
+console.log("23" + "10" + 3); // 23103
 
+let n = "1" + 1; // "11"
+n = n - 1; // 10
+console.log(n);
