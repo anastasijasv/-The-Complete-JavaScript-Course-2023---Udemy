@@ -1,4 +1,4 @@
-// Values and Variables
+// LECTURE: Values and Variables
 
 let js = "amazing";
 console.log(40 + 8 + 23 - 10);
@@ -14,7 +14,7 @@ let myCurrentJob = "Teacher";
 
 console.log(myFirstJob);
 
-// Data Types
+// LECTURE: Data Types
 
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
@@ -36,7 +36,7 @@ console.log(typeof year);
 
 console.log(typeof null);
 
-// let, const and var
+// LECTURE: let, const and var
 
 let myAge = 30;
 myAge = 31;
@@ -46,7 +46,7 @@ const birthYear = 1991;
 var job = "programmer";
 job = "teacher";
 
-// Basic Operators
+// LECTURE: Basic Operators
 
 const now = 2037;
 const ageJonas = now - 1991;
@@ -72,7 +72,7 @@ console.log(ageSarah >= 18);
 const isFullAge = ageSarah >= 18;
 console.log(now - 1991 > now - 2018);
 
-// Operator Precedence
+// LECTURE: Operator Precedence
 
 let a, b;
 a = b = 25 - 10 - 5; // a = b = 10
@@ -81,7 +81,7 @@ console.log(a, b);
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 
-// Strings and Template Literals
+// LECTURE: Strings and Template Literals
 
 const myName = "Jonas";
 const profession = "teacher";
@@ -111,7 +111,7 @@ console.log(`String with
 multiple
 lines`);
 
-// Taking Decisions: if / else Statements
+// LECTURE: Taking Decisions: if / else Statements
 
 const age1 = 19;
 const isOldEnough = age1 >= 18;
@@ -136,7 +136,7 @@ if (myBirth <= 2000) {
 }
 console.log(century);
 
-// Type Conversion and Coercion
+// LECTURE: Type Conversion and Coercion
 
 const inputYear = "1991";
 console.log(inputYear, Number(inputYear));
@@ -155,3 +155,111 @@ console.log("23" + "10" + 3); // 23103
 let n = "1" + 1; // "11"
 n = n - 1; // 10
 console.log(n);
+
+// LECTURE: Truthy and Falsy Values
+
+// 5 falsy values: 0, "", undefined, null, NaN
+
+console.log(Boolean(0)); // false
+console.log(Boolean(undefined)); // false
+console.log(Boolean("Jonas")); // true
+console.log(Boolean({})); // true
+console.log(Boolean("")); // false
+
+const money1 = 0;
+if (money1) {
+  console.log("Don't spend it all ;)");
+} else {
+  console.log("You should get a job!");
+} // You should get a job!
+
+const money2 = 100;
+if (money2) {
+  console.log("Don't spend it all ;)");
+} else {
+  console.log("You should get a job!");
+} // Don't spend it all ;)
+
+let height1;
+if (height1) {
+  console.log("YAY! Height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+} // Height is UNDEFINED
+
+let height2 = 123;
+if (height2) {
+  console.log("YAY! Height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+} // YAY! Height is defined
+
+let height3 = 0;
+if (height3) {
+  console.log("YAY! Height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+} // Height is UNDEFINED
+
+// LECTURE: Equality Operators: == vs ===
+
+// == loose equality operator (type coercion):
+"18" == 18; // true
+
+// === strict equality operator (no type coercion):
+"18" === 18; // false
+
+const age = 18;
+if (age === 18) console.log("You just became an adult :D");
+
+// const favourite = prompt("What's your favourite number?");
+// console.log(favourite);
+// console.log(typeof favourite);
+
+// if (favourite == 23) {
+//   // "23" == 23
+//   console.log("Cool! 23 is an amazing number!");
+// }
+
+// const favourite = Number(prompt("What's your favourite number?"));
+// if (favourite === 23) {
+//   console.log("Cool! 23 is an amazing number!");
+// } else if (favourite === 7) {
+//   console.log("7 is also a cool number");
+// } else {
+//   console.log("Number is not 23 or 7");
+// }
+
+// if (favourite !== 23) console.log("Why not 23?");
+
+// LECTURE: Boolean Logic: AND, OR & NOT Operators
+
+/* 
+A AND B
+true when ALL are true
+
+A OR B
+true when ONE is true
+
+NOT A, NOT B
+inverts true/false value
+
+age = 16
+A: Age is greater or equal 20 -> false
+B: Age is less than 30 -> true
+
+!A -> true
+A AND B -> false
+A OR B -> true
+!A AND B -> true
+A OR !B -> false
+*/
+
+// LECTURE: Logical Operators
+
+const hasDriversLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
