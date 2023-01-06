@@ -80,19 +80,41 @@ Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110.
 Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123.
 Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106. */
 
-dScore1 = 96;
-dScore2 = 108;
-dScore3 = 89;
-kScore1 = 88;
-kScore2 = 91;
-kScore3 = 110;
-dAverage = (dScore1 + dScore2 + dScore3) / 3;
-kAverage = (kScore1 + kScore2 + kScore3) / 3;
+scoreDolphins = (96 + 108 + 89) / 3;
+scoreKoalas = (88 + 91 + 110) / 3;
 
-if (dAverage > kAverage) {
-  console.log("Dolphins are the winners!");
-} else if (kAverage > dAverage) {
-  console.log("Koalas are the winners!");
+if (scoreDolphins > scoreKoalas) {
+  console.log("Dolphins are the winners! 🏆");
+} else if (scoreKoalas > scoreDolphins) {
+  console.log("Koalas are the winners! 🏆");
 } else {
   console.log("It's a draw");
+}
+
+scoreDolphins1 = (97 + 112 + 101) / 3;
+scoreKoalas1 = (109 + 95 + 123) / 3;
+
+if (scoreDolphins1 > scoreKoalas1 && scoreDolphins1 >= 100) {
+  console.log("Dolphins are the winners! 🏆");
+} else if (scoreKoalas1 > scoreDolphins1 && scoreKoalas1 >= 100) {
+  console.log("Koalas are the winners! 🏆");
+} else {
+  console.log("Both teams win the trophy");
+}
+
+scoreDolphins2 = (97 + 112 + 101) / 3;
+scoreKoalas2 = (109 + 95 + 106) / 3;
+
+if (scoreDolphins2 > scoreKoalas2 && scoreDolphins2 >= 100) {
+  console.log("Dolphins are the winners! 🏆");
+} else if (scoreKoalas2 > scoreDolphins2 && scoreKoalas2 >= 100) {
+  console.log("Koalas are the winners! 🏆");
+} else if (
+  scoreDolphins2 === scoreKoalas2 &&
+  scoreDolphins2 >= 100 &&
+  scoreKoalas2 >= 100
+) {
+  console.log("Both teams win the trophy");
+} else {
+  console.log("No team wins trophy 😭");
 }

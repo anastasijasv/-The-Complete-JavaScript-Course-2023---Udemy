@@ -210,7 +210,7 @@ if (height3) {
 "18" === 18; // false
 
 const age = 18;
-if (age === 18) console.log("You just became an adult :D");
+if (age === 18) console.log("You just became an adult 😀");
 
 // const favourite = prompt("What's your favourite number?");
 // console.log(favourite);
