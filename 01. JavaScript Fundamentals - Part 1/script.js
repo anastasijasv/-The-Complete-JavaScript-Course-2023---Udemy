@@ -320,3 +320,33 @@ if (day === "monday") {
 }
 
 // LECTURE: Statements and Expressions
+
+// Expression produces some value:
+3 + 4;
+1991;
+true && false;
+
+// Statement performs some action, but it doesn't produce a value:
+if (23 > 10) {
+  const str = "23 is bigger";
+}
+
+// LECTURE: The Conditional (Ternary) Operator
+
+const newAge = 23;
+newAge >= 18
+  ? console.log("I like to drink wine 🍷")
+  : console.log("I like to drink water 💧");
+
+const drink = newAge >= 18 ? "wine 🍷" : "water 💧";
+console.log(drink);
+
+let drink2;
+if (newAge >= 18) {
+  drink2 = "wine 🍷";
+} else {
+  drink2 = "water 💧";
+}
+console.log(drink2);
+
+console.log(`I like to drink ${newAge >= 18 ? "wine 🍷" : "water 💧"}`);
