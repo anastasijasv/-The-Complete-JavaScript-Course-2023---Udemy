@@ -350,3 +350,19 @@ if (newAge >= 18) {
 console.log(drink2);
 
 console.log(`I like to drink ${newAge >= 18 ? "wine 🍷" : "water 💧"}`);
+
+// LECTURE: JavaScript Releases: ES5, ES6+ and ESNext
+
+/* 
+1995 - Mocha by Brendan Eich (first version of JS)
+1996 - Mocha -> LiveScript -> JavaScript
+1997 - ECMAScript 1 or ES1 (first official standard for JS)
+2009 - ES5 (lots of great new features)
+2015 - ES6/ES2015 (the biggest update to the language ever)
+2016 - ES2016 (and further annual release cycle)
+
+Backwards compatible (DON'T BREAK THE WEB principle)
+
+Development: use the latest Google Chrome.
+Production: use Babel to transpile and polyfill the code.
+*/
